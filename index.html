@@ -32,7 +32,7 @@
 <body class="index-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <i class="header-toggle d-xl-none bi bi-list ms-3 align-self-start"></i>
 
     <div class="profile-img">
       <img src="assets/img/profile-img.jpeg" alt="" class="img-fluid rounded-circle">
@@ -125,6 +125,14 @@ html, body {
   overflow-x: hidden !important;
   overscroll-behavior: none;
   box-sizing: border-box;
+}
+.header-toggle {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999;
 }
 
           .hero-lang-switcher {
