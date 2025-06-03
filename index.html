@@ -180,6 +180,76 @@ html, body {
 
       </style>
 
+<!-- WhatsApp Floating Button with Heartbeat Animation -->
+<a href="https://wa.me/491772718272" class="whatsapp-wrapper" target="_blank" title="Chat with me on WhatsApp">
+  <div class="whatsapp-bubble">Kontaktieren Sie mich jetzt</div>
+  <div class="whatsapp-icon heartbeat">
+    <i class="bi bi-whatsapp"></i>
+  </div>
+</a>
+.whatsapp-wrapper {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.whatsapp-bubble {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.3s;
+}
+
+.whatsapp-icon {
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.3s;
+}
+
+.whatsapp-wrapper:hover .whatsapp-bubble,
+.whatsapp-wrapper:hover .whatsapp-icon {
+  background-color: #1ebe5d;
+}
+
+/* Heartbeat Animation */
+.heartbeat {
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
 
    
 
