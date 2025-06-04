@@ -404,7 +404,11 @@ html, body {
       <div class="row align-items-start">
         <!-- Image on the left -->
         <div class="col-md-4 text-center mb-4">
-          <img src="assets/img/story.jpeg" class="img-fluid rounded-circle shadow border border-3 border-primary p-2" alt="Muhammad Hassan" style="max-width: 250px;">
+         <img src="assets/img/story.jpeg" 
+     class="img-fluid rounded-circle shadow border border-3 border-primary p-2 flip-image" 
+     alt="Muhammad Hassan" 
+     style="max-width: 250px;">
+
           <div class="mt-2 fst-italic text-muted">Muhammad Hassan erzählt seine Lebensgeschichte</div>
         </div>
 
@@ -433,6 +437,28 @@ html, body {
     </section>
   </div>
 </section>
+ <style>
+  @keyframes flipPause {
+    0% {
+      transform: rotateY(0deg);
+    }
+    10% {
+      transform: rotateY(180deg);
+    }
+    90% {
+      transform: rotateY(180deg); /* hold the flip */
+    }
+    100% {
+      transform: rotateY(360deg); /* return to front */
+    }
+  }
+
+  .flip-image {
+    animation: flipPause 10s linear infinite;
+    transform-style: preserve-3d;
+    display: inline-block;
+  }
+  </style>
 
 
           
